@@ -28,7 +28,7 @@ radio.onReceivedString(function (receivedString) {
     if (receivedString.includes("pong")) {
         // Klipper vekk "pong" fra svaret, så kun IDtallet gjenstår
         pongListe.push(receivedString.substr(4, 10))
-        Pong_progress_bar(pongListe.length)
+        Pong_progress_bar(pongListe.length - 1)
     }
 })
 // List opp alle som har svart at de er våken
